@@ -1,14 +1,42 @@
-@media (min-width: 576px) {
+// @media (min-width: 576px) {
+// }
 
-.main-mobile-bar{
-    
-}
+@import 'src/app/Style/Variables.scss';
 
-    .home{
-        svg{
-            path{
-                
-            }
+.main-mobile-bar {
+    max-width: 450px;
+    padding: 20px 10px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    box-shadow: 0px -8px 40px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px -8px 40px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px -8px 40px 5px rgba(0, 0, 0, 0.5);
+
+    div {
+        padding: 7px 9px;
+        border-radius: 50px;
+
+        svg>path {
+            fill:$svgGryColor;
+        }
+    }
+
+    div:hover {
+        background: $PrimaryColor;
+        cursor: pointer;
+
+        svg>path {
+            fill:#fff;
         }
     }
 }
+
+// .home{
+//     svg{
+//         path{
+
+//         }
+//     }
+// }
